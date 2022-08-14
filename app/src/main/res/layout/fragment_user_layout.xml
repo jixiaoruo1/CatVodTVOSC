@@ -52,7 +52,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:text="点播 "
+                android:text="影视 "
                 android:textAlignment="gravity"
                 android:textColor="@color/color_CCFFFFFF"
                 android:textSize="@dimen/ts_32" />
@@ -206,7 +206,7 @@
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:gravity="center"
-                android:text="存储 "
+                android:text="网盘 "
                 android:textAlignment="gravity"
                 android:textColor="@color/color_CCFFFFFF"
                 android:textSize="@dimen/ts_32" />
