@@ -319,7 +319,8 @@ public class VodController extends BaseController {
                     int step = Hawk.get(HawkConfig.PLAY_TIME_STEP, 5);
                     int st = mPlayerConfig.getInt("st");
                     st += step;
-                    if (st > 60 * 10)
+                    //片头最大跳过时间3分钟                
+                    if (st > 60 * 3)
                         st = 0;
                     mPlayerConfig.put("st", st);
                     updatePlayerCfgView();
@@ -336,7 +337,8 @@ public class VodController extends BaseController {
                     int step = Hawk.get(HawkConfig.PLAY_TIME_STEP, 5);
                     int et = mPlayerConfig.getInt("et");
                     et += step;
-                    if (et > 60 * 10)
+                   //片头最大跳过时间3分钟 
+                    if (et > 60 * 3)
                         et = 0;
                     mPlayerConfig.put("et", et);
                     updatePlayerCfgView();
