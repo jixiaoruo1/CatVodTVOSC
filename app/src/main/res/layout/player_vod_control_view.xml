@@ -148,30 +148,30 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/vs_5"
                 android:layout_marginRight="@dimen/vs_5"
-                android:layout_weight="1"
-                android:paddingLeft="@dimen/vs_0"
                 android:paddingRight="@dimen/vs_0"
+                android:paddingLeft="@dimen/vs_0"
                 android:text=""
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/ts_16"
-		android:visibility="gone"/>
+		android:visibility="gone" />
            <TextView
                 android:id="@+id/play_3rdplayer"
-                android:layout_width="wrap_content"
+	        android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/vs_5"
                 android:layout_marginRight="@dimen/vs_5"
-                android:layout_weight="1"
                 android:background="@drawable/button_dialog_main"
                 android:focusable="true"
-                android:paddingLeft="@dimen/vs_20"
-                android:paddingTop="@dimen/vs_10"
-                android:paddingRight="@dimen/vs_20"
-                android:paddingBottom="@dimen/vs_10"
+                android:padding="@dimen/vs_10"
+                android:focusable="true"
+
+
+                android:padding="@dimen/vs_10"
+
                 android:text="外部播放"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/ts_24"
-                tools:visibility="gone" />
+                android:textSize="@dimen/ts_16"
+                tools:visibility="gone" />		
 
             <TextView
                 android:layout_width="wrap_content"
@@ -331,7 +331,7 @@
                 android:layout_gravity="center"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
-                android:src="@drawable/icon_play" />
+                android:src="@drawable/icon_play1" />
 
             <TextView
                 android:id="@+id/tv_pause_progress_text"
