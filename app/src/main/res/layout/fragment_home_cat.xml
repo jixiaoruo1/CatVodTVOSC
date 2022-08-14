@@ -84,9 +84,8 @@
                         android:paddingRight="@dimen/vs_10"
                         android:text="@string/app_name"
                         android:textAlignment="gravity"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/ts_30"
-                        android:textStyle="bold" />
+                        android:textColor="@color/color_CCFFFFFF"
+                        android:textSize="@dimen/ts_28" />
                 </FrameLayout>
 
                 <com.github.tvbox.osc.ui.tv.widget.MarqueeTextView
@@ -99,7 +98,7 @@
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:gravity="center_vertical"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/color_CCFFFFFF"
                     android:textSize="28pt"
                     android:visibility="gone" />
 
@@ -117,7 +116,7 @@
                     android:focusableInTouchMode="false"
                     android:gravity="right|center_vertical"
                     android:textAlignment="gravity"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/color_CCFFFFFF"
                     android:textSize="@dimen/ts_28" />
             </LinearLayout>
 
@@ -154,9 +153,9 @@
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:gravity="left|center_vertical"
-                        android:text="最近观看"
+                        android:text="历史记录"
                         android:textAlignment="gravity"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/color_CCFFFFFF"
                         android:textSize="@dimen/ts_30"
                         android:textStyle="normal" />
 
@@ -170,7 +169,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/shape_source_series_focus"
                         android:focusable="true"
                         android:orientation="horizontal"
                         android:paddingTop="@dimen/vs_4"
@@ -178,10 +176,11 @@
 
                         <ImageView
                             android:id="@+id/imgExpandHistIcon"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="@dimen/vs_40"
+                            android:layout_height="@dimen/vs_40"
+							android:alpha="0.85"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/icon_angle_down" />
+                            app:srcCompat="@drawable/icon_fanye" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -210,9 +209,9 @@
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:gravity="left|center_vertical"
-                        android:text="更新推荐"
+                        android:text="影视推荐"
                         android:textAlignment="gravity"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/color_CCFFFFFF"
                         android:textSize="@dimen/ts_30"
                         android:textStyle="normal" />
 
