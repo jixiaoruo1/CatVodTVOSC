@@ -386,7 +386,7 @@ public class VodController extends BaseController {
             lbl3rdPlayer.setVisibility(GONE);
             m3rdPlayerBtn.setVisibility(View.GONE);
         } else {
-            lbl3rdPlayer.setVisibility(VISIBLE);
+            lbl3rdPlayer.setVisibility(GONE);
             m3rdPlayerBtn.setVisibility(View.VISIBLE);
             Integer selectedType = Hawk.get(HawkConfig.THIRD_PARTY_PLAYER, types[0]);
             if(Arrays.binarySearch(types, selectedType) < 0)
