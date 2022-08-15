@@ -116,8 +116,8 @@ public class UpdateDialog extends BaseDialog {
 
         String url = this.versionInfo.Source + this.versionInfo.VersionNo + ".apk";
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-        request.setDescription("TV猫盒 更新版本 " + this.versionInfo.VersionNo + " 来自Github");
-        request.setTitle("TV猫盒");
+        request.setDescription("影视软件 更新版本 " + this.versionInfo.VersionNo + " 来自Github");
+        request.setTitle("影视软件");
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
 
         Uri destination = FileProvider
