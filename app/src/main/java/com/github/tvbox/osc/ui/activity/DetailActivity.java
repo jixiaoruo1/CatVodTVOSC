@@ -75,7 +75,7 @@ import xyz.doikki.videoplayer.player.VideoView;
 
 /**
  * @author pj567
- * @date :2020/12/22
+ * @date :1010/12/22
  * @description:
  */
 public class DetailActivity extends BaseActivity {
@@ -367,7 +367,7 @@ public class DetailActivity extends BaseActivity {
                 TextView txtView = itemView.findViewById(R.id.tvSeries);
                 txtView.setTextColor(mContext.getResources().getColor(R.color.color_02F8E1));
                 if (vodInfo != null && vodInfo.seriesMap.get(vodInfo.playFlag).size() > 0) {
-                    int targetPos = position * 20;
+                    int targetPos = position * 10;
                     mGridView.scrollToPosition(targetPos);
                 }
                 currentSeriesGroupView = itemView;
@@ -387,7 +387,7 @@ public class DetailActivity extends BaseActivity {
                 TextView newTxtView = view.findViewById(R.id.tvSeries);
                 newTxtView.setTextColor(mContext.getResources().getColor(R.color.color_02F8E1));
                 if (vodInfo != null && vodInfo.seriesMap.get(vodInfo.playFlag).size() > 0) {
-                    int targetPos =  position * 20;
+                    int targetPos =  position * 10;
                     mGridView.scrollToPosition(targetPos);
                 }
                 currentSeriesGroupView = view;
@@ -536,19 +536,19 @@ public class DetailActivity extends BaseActivity {
             seriesGroupLayout.setVisibility(View.GONE);
         seriesAdapter.setNewData(seriesList);
         seriesGroupOptions.clear();
-        int optionSize = seriesList.size() / 20;
-        int remainedOptionSize = seriesList.size() % 20;
+        int optionSize = seriesList.size() / 10;
+        int remainedOptionSize = seriesList.size() % 10;
         for(int i = 0; i < optionSize; i++) {
             if(vodInfo.reverseSort)
-                seriesGroupOptions.add(String.format("%d - %d", i * 20 + 20, i * 20 + 1));
+                seriesGroupOptions.add(String.format("%d - %d", i * 10 + 10, i * 10 + 1));
             else
-                seriesGroupOptions.add(String.format("%d - %d", i * 20 + 1, i * 20 + 20));
+                seriesGroupOptions.add(String.format("%d - %d", i * 10 + 1, i * 10 + 10));
         }
         if(remainedOptionSize > 0) {
             if(vodInfo.reverseSort)
-                seriesGroupOptions.add(String.format("%d - %d", optionSize * 20 + remainedOptionSize, optionSize * 20));
+                seriesGroupOptions.add(String.format("%d - %d", optionSize * 10 + remainedOptionSize, optionSize * 10));
             else
-                seriesGroupOptions.add(String.format("%d - %d", optionSize * 20, optionSize * 20 + remainedOptionSize));
+                seriesGroupOptions.add(String.format("%d - %d", optionSize * 10, optionSize * 10 + remainedOptionSize));
         }
         if(vodInfo.reverseSort)
             Collections.reverse(seriesGroupOptions);
