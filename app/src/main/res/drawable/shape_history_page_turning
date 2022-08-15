@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    历史记录下拉按钮背景颜色-->
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="20mm" />
+            <stroke android:width="2mm" android:color="@color/color_FFFFFF" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:state_focused="false">
+        <shape>
+            <corners android:radius="20mm" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>
