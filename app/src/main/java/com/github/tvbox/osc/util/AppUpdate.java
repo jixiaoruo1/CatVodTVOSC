@@ -16,7 +16,7 @@ import okhttp3.Response;
 public class AppUpdate {
 
     private static final String[] updateUrls = new String[] {
-            "https://raw.githubusercontent.com/suanjin1/CatVodTVOSC_Release/main/",
+            "https://raw.githubusercontent.com/suanjin/CatVodTVOSC_Release/main/",
             "https://codeberg.org/suanjin/CatVodTVOSC_Release/raw/branch/main/"
     };
 
