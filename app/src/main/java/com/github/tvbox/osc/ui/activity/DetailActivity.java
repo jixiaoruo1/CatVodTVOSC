@@ -365,9 +365,9 @@ public class DetailActivity extends BaseActivity {
             @Override
             public void onItemSelected(TvRecyclerView parent, View itemView, int position) {
                 TextView txtView = itemView.findViewById(R.id.tvSeries);
-                txtView.setTextColor(mContext.getResources().getColor(R.color.color_02F8E1));
+				txtView.setTextColor(mContext.getResources().getColor(R.color.color_02F8E1));
                 if (vodInfo != null && vodInfo.seriesMap.get(vodInfo.playFlag).size() > 0) {
-                    int targetPos = position * 10;
+                    int targetPos = position * 15;
                     mGridView.scrollToPosition(targetPos);
                 }
                 currentSeriesGroupView = itemView;
@@ -387,7 +387,7 @@ public class DetailActivity extends BaseActivity {
                 TextView newTxtView = view.findViewById(R.id.tvSeries);
                 newTxtView.setTextColor(mContext.getResources().getColor(R.color.color_02F8E1));
                 if (vodInfo != null && vodInfo.seriesMap.get(vodInfo.playFlag).size() > 0) {
-                    int targetPos =  position * 10;
+                    int targetPos =  position * 15;
                     mGridView.scrollToPosition(targetPos);
                 }
                 currentSeriesGroupView = view;
@@ -536,19 +536,19 @@ public class DetailActivity extends BaseActivity {
             seriesGroupLayout.setVisibility(View.GONE);
         seriesAdapter.setNewData(seriesList);
         seriesGroupOptions.clear();
-        int optionSize = seriesList.size() / 10;
-        int remainedOptionSize = seriesList.size() % 10;
+        int optionSize = seriesList.size() / 15;
+        int remainedOptionSize = seriesList.size() % 15;
         for(int i = 0; i < optionSize; i++) {
             if(vodInfo.reverseSort)
-                seriesGroupOptions.add(String.format("%d - %d", i * 10 + 10, i * 10 + 1));
+                seriesGroupOptions.add(String.format("%d - %d", i * 15 + 15, i * 15 + 1));
             else
-                seriesGroupOptions.add(String.format("%d - %d", i * 10 + 1, i * 10 + 10));
+                seriesGroupOptions.add(String.format("%d - %d", i * 15 + 1, i * 15 + 15));
         }
         if(remainedOptionSize > 0) {
             if(vodInfo.reverseSort)
-                seriesGroupOptions.add(String.format("%d - %d", optionSize * 10 + remainedOptionSize, optionSize * 10));
+                seriesGroupOptions.add(String.format("%d - %d", optionSize * 15 + remainedOptionSize, optionSize * 15));
             else
-                seriesGroupOptions.add(String.format("%d - %d", optionSize * 10, optionSize * 10 + remainedOptionSize));
+                seriesGroupOptions.add(String.format("%d - %d", optionSize * 15, optionSize * 15 + remainedOptionSize));
         }
         if(vodInfo.reverseSort)
             Collections.reverse(seriesGroupOptions);
@@ -603,7 +603,7 @@ public class DetailActivity extends BaseActivity {
                                 .transform(new RoundTransformation(MD5.string2MD5(mVideo.pic + mVideo.name))
                                         .centerCorp(true)
                                         .override(AutoSizeUtils.mm2px(mContext, 300), AutoSizeUtils.mm2px(mContext, 400))
-                                        .roundRadius(AutoSizeUtils.mm2px(mContext, 10), RoundTransformation.RoundType.ALL))
+                                        .roundRadius(AutoSizeUtils.mm2px(mContext, 15), RoundTransformation.RoundType.ALL))
                                 .placeholder(R.drawable.img_loading_placeholder)
                                 .error(R.drawable.img_loading_placeholder)
                                 .into(ivThumb);
